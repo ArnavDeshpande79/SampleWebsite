@@ -1,0 +1,79 @@
+div.container{
+	font-size:25px;
+	opacity:0;
+	-webkit-transition:300ms;
+}
+div.container > div.found{
+	margin-top:25px;
+	padding:10px;
+	font-size:20px;
+	background-color:#ffffff;
+	box-shadow:0px 20px 10px -10px gray;
+	border-left:5px solid black;
+	border-right:5px solid black;
+	line-height:1.5;
+}
+div.container > div.found > div.apply{
+	width:25%;
+	margin-top:10px;
+	padding:10px;
+	display:block;
+	width:auto;
+	color:black;
+	opacity:0.5;
+	outline:none;
+	-webkit-transition:300ms;
+	cursor:pointer;
+}
+div.container > div.found > div.apply:hover{
+	opacity:1;
+}
+div.anim{
+	text-align:center;
+}
+div.box{
+	margin-top:40px;
+	width:50px;
+	height:50px;
+	background-color:black;
+	display:inline-block;
+	-webkit-animation:myanim1 800ms linear infinite;
+	-webkit-animation-fill-mode:backwards;
+	opacity:0.5;
+}
+	div.box.b3{
+	-webkit-animation-delay:0s;
+	}
+	div.box.b4{
+	-webkit-animation-delay:200ms;
+	}
+	@keyframes myanim1{
+		0%{-webkit-transform:rotate(0deg) scale(0);}
+		50%{-webkit-transform:rotate(180deg) scale(1);}
+		100%{-webkit-transform:rotate(360deg) scale(0);}
+	}
+div.container > div.found > div.apply > form td{
+	padding:10px;
+}
+div.container > div.found > div.apply > form td >select> option{
+	width:100%;
+}
+div.container > div.found > div.apply > form td input:focus,textarea:focus,select:focus{
+	opacity:0.8;
+	box-shadow:0px 2px 5px 0px gray;
+}
+div.container > div.found > div.apply > form td input,textarea,select{
+	color:white;
+	outline:none;
+	margin:0px;
+	padding:10px;
+	border:none;
+	font-size:20px;
+	width:100%;
+	opacity:1;
+	-webkit-transition:box-shadow,opacity 300ms ease-in-out;
+}
+div.container > div.found > div.apply > form input[type = "submit"]{
+	width:auto;
+	-webkit-transition:box-shadow 300ms ease-in-out;
+}
